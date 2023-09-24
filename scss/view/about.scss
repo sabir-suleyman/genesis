@@ -46,6 +46,109 @@ $px_text: 16px;
   background: colors.$cl-dark400;
 }
 
+#sec-senate{
+  display: flex;
+  margin: 60px auto;
+  
+  img{
+    width: 450px;
+    transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+}
+
+#senate-card{
+  background-color: #191919;
+  border-radius: 15px;
+  transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+  display: flex; 
+  align-items: center;
+  margin-bottom: 45px;
+  
+  &:hover{
+    transform: scale(1.05);
+  }
+
+  .c-p-nav{
+    margin: 15px 20px 20px 20px;   
+    a {
+      display: block;
+      margin:0;
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+      
+      &:hover{
+        transform: scale(1.20);
+      }
+  }
+}
+}
+
+#photo-and-github{
+  display: inline-block;
+}
+
+.card-text-and-buttons{
+  place-self: start; 
+  margin: 6px 40px  10px 20px;
+}
+
+#about-button{
+  display: flex;
+  justify-content: right;
+  border-radius: 18px;
+  border: none;
+  padding: 9px 25px 9px 25px;
+  background-color: #282727;
+  color: #ffffff;
+  font-size: large;
+  font-family: Montserrat;
+  cursor: pointer;
+  transition: transform ease-in-out 150ms;
+  margin-left: 25px;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+.button-container{
+  display: flex;
+  position:static;
+  padding: 100px 0 15px 0;
+}
+
+.boardmember-card{
+  background-color: #191919;
+  border-radius: 15px;
+  transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+  display: flex; 
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+
+  img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  h1{
+    place-self: start;
+    padding-right: 15px; 
+  }
+}
+
 
 #sec-legion {
   background: #000000;
@@ -55,9 +158,10 @@ $px_text: 16px;
   }
 
   .hr-under-leader {
-    border: 1px #111 solid;
+    border: 1px #444 solid;
   }
 }
+
 #sec-boardmember {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +171,7 @@ $px_text: 16px;
   flex: 1;
   max-width: 100%;
 
-  h1,h2{
+  h1, h2 {
     font-size: 16px;
   }
 }

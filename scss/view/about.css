@@ -30,6 +30,101 @@
   background: #1F1F1F;
 }
 
+#sec-senate {
+  display: flex;
+  margin: 60px auto;
+}
+#sec-senate img {
+  width: 450px;
+  transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+}
+#sec-senate img:hover {
+  transform: scale(1.05);
+}
+
+#senate-card {
+  background-color: #191919;
+  border-radius: 15px;
+  transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+#senate-card:hover {
+  transform: scale(1.05);
+}
+#senate-card .c-p-nav {
+  margin: 15px 20px 20px 20px;
+}
+#senate-card .c-p-nav a {
+  display: block;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+}
+#senate-card .c-p-nav a:hover {
+  transform: scale(1.2);
+}
+
+#photo-and-github {
+  display: inline-block;
+}
+
+.card-text-and-buttons {
+  place-self: start;
+  margin: 6px 40px 10px 20px;
+}
+
+#about-button {
+  display: flex;
+  justify-content: right;
+  border-radius: 18px;
+  border: none;
+  padding: 9px 25px 9px 25px;
+  background-color: #282727;
+  color: #ffffff;
+  font-size: large;
+  font-family: Montserrat;
+  cursor: pointer;
+  transition: transform ease-in-out 150ms;
+  margin-left: 25px;
+}
+#about-button:hover {
+  transform: scale(1.07);
+}
+
+.button-container {
+  display: flex;
+  position: static;
+  padding: 100px 0 15px 0;
+}
+
+.boardmember-card {
+  background-color: #191919;
+  border-radius: 15px;
+  transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.boardmember-card:hover {
+  transform: scale(1.05);
+}
+.boardmember-card img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.boardmember-card h1 {
+  place-self: start;
+  padding-right: 15px;
+}
+
 #sec-legion {
   background: #000000;
 }
@@ -37,7 +132,7 @@
   border: 1px #444 solid;
 }
 #sec-legion .hr-under-leader {
-  border: 1px #111 solid;
+  border: 1px #444 solid;
 }
 
 #sec-boardmember {
